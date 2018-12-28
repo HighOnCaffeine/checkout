@@ -7,13 +7,11 @@ package dessertShoppe;
 
 public class DessertItem {
     
-    private final String name;
+    private String name;
+    protected double cost;
     
-    private double cost;
-    
-    public DessertItem(String name, int cost) {
+    public DessertItem(String name) {
         this.name = name;
-        this.cost = cost;
     }
     
     public String getName() {
@@ -22,10 +20,6 @@ public class DessertItem {
     
     public double getCost() {
         return this.cost;
-    }
-    
-    public void setCost(double cost) {
-        this.cost = cost;
     }
     
     //-------------------------------------

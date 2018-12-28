@@ -7,13 +7,14 @@ package dessertShoppe;
 
 public class Cookie extends DessertItem {
     
-     private final int number;
-     private final double pricePerDozen;
+     private int number;
+     private double pricePerDozen;
      
      public Cookie (String name, int number, double pricePerDozen) {
          super(name);
          this.number = number;
          this.pricePerDozen = pricePerDozen;
+         this.cost = this.number * (this.pricePerDozen / 12.0);
      }
      
      public int getNumber() {
@@ -22,6 +23,11 @@ public class Cookie extends DessertItem {
      
      public double getPricePerDozen() {
          return this.pricePerDozen;
+     }
+     
+     public double getCost() {
+         this.cost = this.cost = this.number * (this.pricePerDozen / 12.0);
+         return this.cost;
      }
      
 }

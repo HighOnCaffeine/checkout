@@ -7,16 +7,26 @@ package dessertShoppe;
 
 public class Candy extends DessertItem {
     
-    private final double priceperPound;
+    private double pricePerPound;
     private double weight;
     
     public Candy(String name, double weight, double pricePerPound) {
         super(name);
-        this.priceperPound = pricePerPound;
+        this.pricePerPound = pricePerPound;
+        this.weight = weight;
     }
     
     public double getPricePerPound() {
-        return this.priceperPound;
+        return this.pricePerPound;
+    }
+    
+    public double getWeight() {
+        return this.weight;
+    }
+    
+    public double getCost() {
+        this.cost = this.pricePerPound * this.weight;
+        return this.cost;
     }
     
 }
