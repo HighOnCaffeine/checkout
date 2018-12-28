@@ -7,12 +7,13 @@ package dessertShoppe;
 
 public class Icecream extends DessertItem {
     
+    private double cost;
+    
     public Icecream(String name, double cost){
         super(name);
         this.cost = cost;
     }
     
-    @Override
     public double getCost() {
         return this.cost;
     }

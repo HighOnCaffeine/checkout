@@ -11,6 +11,7 @@ public class Sundae extends Icecream {
     
     private String toppingName;
     private double toppingCost;
+    private double cost;
     
     Sundae(String name, double cost, String toppingName, double toppingCost) {
         super(name, cost);

@@ -9,12 +9,13 @@ public class Cookie extends DessertItem {
     
      private int number;
      private double pricePerDozen;
+     private double cost;
      
      public Cookie (String name, int number, double pricePerDozen) {
          super(name);
          this.number = number;
          this.pricePerDozen = pricePerDozen;
-         this.cost = this.number * (this.pricePerDozen / 12.0);
+         
      }
      
      public int getNumber() {
@@ -26,7 +27,7 @@ public class Cookie extends DessertItem {
      }
      
      public double getCost() {
-         this.cost = this.cost = this.number * (this.pricePerDozen / 12.0);
+         this.cost  = this.number * (this.pricePerDozen / 12.0);
          return this.cost;
      }
      
