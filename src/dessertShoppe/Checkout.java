@@ -115,7 +115,7 @@ public class Checkout {
                     c += " ";
                 out += s + name + c + cost;
             } 
-            else if (dessert instanceof Icecream) {                                 // IF INSTANCE OF Sundae
+            else if (dessert instanceof Sundae) {                                 // IF INSTANCE OF Sundae
                 Sundae item = (Sundae) dessert;
                 String n = item.getName() ;
                 String t = item.getTopping();
