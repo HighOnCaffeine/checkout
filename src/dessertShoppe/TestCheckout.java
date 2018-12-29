@@ -77,10 +77,10 @@ public class TestCheckout {
                     case 2: 
                     {
                         System.out.print("1. Fudge Candy (Rs. 350/lb)\n2. Caramel Candy(Rs. 600/lb)\n3. Mars Candy(Rs. 800/lb)\n>> ");
-                        int candy = 0, lbs = 0;
+                        int candy = 0; double lbs = 0;
                         candy = scanner.nextInt();
                         System.out.print("Amount of candy in lbs.: ");
-                        lbs = scanner.nextInt();
+                        lbs = scanner.nextDouble();
                         switch(candy) {
                             case 1:
                                 c.enterItem(new Candy("Fudge", lbs, 350));
@@ -144,8 +144,8 @@ public class TestCheckout {
                         }
                         if(ic < 1 || ic > 3)
                             break;
-                        ic = scanner.nextInt();
                         System.out.print("1. Chocolate Topping (Rs. 50/pc)\n2. Strawberry Topping (Rs. 50/pc)\n3. BlueBerry Topping (Rs. 50/pc)\n>> ");
+                        ic = scanner.nextInt();
                         switch(ic) {
                             case 1:
                                 t = "Chocolate";
